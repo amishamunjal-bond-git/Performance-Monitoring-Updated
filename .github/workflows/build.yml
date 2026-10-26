@@ -509,7 +509,7 @@ jobs:
 
       - name: Sign Lite
         if: github.event_name == 'release'
-        uses: signpath/github-action-submit-signing-request@v2
+        uses: signpath/github-action-submit-signing-request@v3
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '7969f8b6-d946-4a74-9bac-a55856d8b8e0'
@@ -522,7 +522,7 @@ jobs:
 
       - name: Sign Darling
         if: github.event_name == 'release'
-        uses: signpath/github-action-submit-signing-request@v2
+        uses: signpath/github-action-submit-signing-request@v3
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '7969f8b6-d946-4a74-9bac-a55856d8b8e0'
@@ -584,7 +584,7 @@ jobs:
 
       - name: Sign Lite (Velopack)
         if: github.event_name == 'release'
-        uses: signpath/github-action-submit-signing-request@v2
+        uses: signpath/github-action-submit-signing-request@v3
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '7969f8b6-d946-4a74-9bac-a55856d8b8e0'
@@ -602,7 +602,7 @@ jobs:
       # Erik creates the slug this step fails the release — the standing #1340 SignPath prerequisite.
       - name: Sign Darling Viewer (Velopack)
         if: github.event_name == 'release'
-        uses: signpath/github-action-submit-signing-request@v2
+        uses: signpath/github-action-submit-signing-request@v3
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '7969f8b6-d946-4a74-9bac-a55856d8b8e0'
